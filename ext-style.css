@@ -73,9 +73,20 @@ ion-icon {
     margin-left: 5rem;
 }
 
+.news-title {
+    color: #f8fcda;
+    text-transform: capitalize;
+    margin: 2rem;
+    
+}
+
 .card {
     margin: 2rem;
     min-height: 15rem;
+}
+
+.card-img-top {
+    margin-top: 2rem;
 }
 
 
