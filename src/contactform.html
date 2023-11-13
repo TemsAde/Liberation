@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Liberation Chapel</title>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div  class="bg-gradient-to-l from-[#B87333] from-20% to-[#011936] min-h-screen">
+
+        <!-- HEADER -->
+
+         <nav class="flex justify-between items-center w-[92%] mx-auto">
+           <div>
+             <a href="index.html">
+              <img class="w-60" src="../assets/Luna__1_-removebg-preview.png" alt="logo">
+             </a> 
+           </div>
+ 
+           <div class="nav-links md:static absolute md:bg-transparent bg-sky-950 md:min-h-fit min-h-[60vw] left-0 top-[-100%] md:w-auto w-full flex items-center px-10">
+             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12">
+                 <li>
+                      <a class="hover:text-[#B57133] md:hover:text-[#011936] text-white" href="index.html">HOME</a>
+                 </li>
+                 <li>
+                      <a class="hover:text-[#B57133] md:hover:text-[#011936] text-white" href="whoweare.html">WHO WE ARE</a>
+                 </li>
+                 <li>
+                      <a class="hover:text-[#B57133] md:hover:text-[#011936] text-white" href="give2.html">GIVE</a>
+                 </li>
+                 <li>
+                      <a class="hover:text-[#B57133] md:hover:text-[#011936] text-white" href="news.html">NEWS</a>
+                 </li>
+              </ul>
+           </div>
+
+           <div class="md:hidden">
+           <ion-icon onclick="ontogglemenu(this)" name="menu-outline" class="text-3xl text-white cursor-pointer md:hidden"></ion-icon>
+           </div>
+        </nav> 
+           
+        <!-- FORM -->
+        <div class="bg-[#f8fcda] m-8 rounded-xl">
+            <div class="container flex flex-col md:flex-row lg:max-w-5xl w-full px-5 py-12 md:py-24 mx-auto section"
+                id="contact-form">
+                <div class="md:w-1/2 w-full">
+                    <h1 class="text-4xl text-gray-800 sm:text-4xl font-bold title-font mb-4">Contact Us</h1>
+                    <p class="leading-relaxed text-xl text-gray-900">
+                        We're here to assist you! If you have any questions or need assistance, please feel free to reach out to
+                        us.
+                        <br><br>
+                        You can also email us.
+                           <a href="rccgliberationchapel@gmail.com" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">rccgliberationchapel@gmail.com</a>
+            
+                    </p>
+                    <p class="leading-relaxed text-xl text-gray-900 mt-8">
+                        Or call us 
+                    </p>
+                    <span class="inline-flex mt-6 justify-center sm:justify-start">
+                     
+                       
+                    </span>
+                </div>
+                <div class="md:w-1/2 w-full mt-10 md:mt-0 md:pl-28">
+                    <h1 class="text-4xl text-gray-800 sm:text-4xl font-bold title-font mb-4">Contact Form</h1>
+                    <form action="send-contact.php" method="post" id="submit-contact-form">
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="name" class="leading-7 py-4 text-lg text-gray-900">Your Name</label>
+                                <input type="text" id="name" name="name" required=""
+                                    class="w-full bg-[#c5832b] rounded border border-[#11936] focus:border-blue-950 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="email" class="leading-7 py-4 text-lg text-gray-900">Your Email</label>
+                                <input type="email" id="email" name="email" required=""
+                                    class="w-full bg-[#c5832b] rounded border border-gray-400 focus:border-blue-950 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 py-4 text-lg text-gray-900">Your Message</label>
+                                <textarea id="message" name="message" required=""
+                                    class="w-full bg-[#c5832b] rounded border border-gray-400 focus:border-blue-950 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button type="submit"
+                                class="flex text-white bg-gray-900 border-0 py-4 px-6 focus:outline-none hover:bg-blue-900 rounded text-xl font-bold shadow-lg mx-0 flex-col text-center g-recaptcha">
+                                Send Message ✉
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <div class="md:grid md:grid-cols-2 flex-col my-2">
+
+                    <div class="text-center">
+                        <p class="text-xl font-extralight text-white my-2">
+                            17 Lisabi Street, Off Ojuelegba Rd,
+                            Surulere, Lagos.
+                        </p>
+                        <a class="text-xl text-white" type="phone" href="#">+234-070-xxx-xxx</a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-3xl my-2 text-white space-x-10 placeholder:text-center">
+                            <span><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></span>
+                            <span><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></span>
+                            <span><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></span>
+                        </div>
+                        <a type="email" class="text-xl text-white" href="#">rccgliberationchapel@gmail.com</a>
+                    </div>
+                </div>
+
+                <hr class="font-bold bg-slate-300">
+
+                <div class="text-center text-white py-2">
+                    © 2023 RCCG, Liberation Chapel. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>        
