@@ -18,7 +18,7 @@
 
          <nav class="flex justify-between items-center w-[92%] mx-auto">
            <div>
-             <a href="index.html">
+             <a href="../index.html">
               <img class="w-60" src="../assets/Luna__1_-removebg-preview.png" alt="logo">
              </a> 
            </div>
@@ -26,7 +26,7 @@
            <div class="nav-links md:static absolute md:bg-transparent bg-sky-950 md:min-h-fit min-h-[60vw] left-0 top-[-100%] md:w-auto w-full flex items-center px-10">
              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12">
                  <li>
-                      <a class="hover:text-[#B57133] md:hover:text-[#011936] text-white" href="index.html">HOME</a>
+                      <a class="hover:text-[#B57133] md:hover:text-[#011936] text-white" href="../index.html">HOME</a>
                  </li>
                  <li>
                       <a class="hover:text-[#B57133] md:hover:text-[#011936] text-white" href="whoweare.html">WHO WE ARE</a>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="md:w-1/2 w-full mt-10 md:mt-0 md:pl-28">
                     <h1 class="text-4xl text-gray-800 sm:text-4xl font-bold title-font mb-4">Contact Form</h1>
-                    <form action="send-contact.php" method="post" id="submit-contact-form">
+                    <form action="send-contact.php" method="post" id="submit-contact-form" netlify>
                         <div class="p-2 w-full">
                             <div class="relative">
                                 <label for="name" class="leading-7 py-4 text-lg text-gray-900">Your Name</label>
@@ -79,8 +79,22 @@
                         </div>
                         <div class="p-2 w-full">
                             <div class="relative">
+                                <label for="purpose" class="leading-7 py-4 text-lg text-gray-900">Purpose (Inquiry, Counseling, Collaborations, etc) </label>
+                                <input type="text" id="purpose" name="purpose" required=""
+                                    class="w-full bg-[#c5832b] rounded border border-gray-400 focus:border-blue-950 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
                                 <label for="email" class="leading-7 py-4 text-lg text-gray-900">Your Email</label>
                                 <input type="email" id="email" name="email" required=""
+                                    class="w-full bg-[#c5832b] rounded border border-gray-400 focus:border-blue-950 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="phone" class="leading-7 py-4 text-lg text-gray-900">Your Phone Number</label>
+                                <input type="number" id="phone" name="phone number" required=""
                                     class="w-full bg-[#c5832b] rounded border border-gray-400 focus:border-blue-950 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
                             </div>
                         </div>
