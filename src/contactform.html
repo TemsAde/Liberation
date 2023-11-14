@@ -145,5 +145,18 @@
                 </div>
             </div>
         </footer>
-    </div>    
+    </div>  
+    
+    
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+   
+        function ontogglemenu(e){
+            e.name = e.name === 'menu-outline' ? 'close' : 'menu-outline'
+   
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
 </body>        
